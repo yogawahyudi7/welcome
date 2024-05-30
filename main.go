@@ -17,5 +17,6 @@ func main() {
 	})
 
 	log.Println("Server started on :8080")
-	http.ListenAndServe(":8080", mux)
+
+	http.ListenAndServe("0.0.0.0:8080", mux)
 }
